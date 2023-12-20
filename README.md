@@ -1,29 +1,22 @@
-This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](https://github.com/rainbow-me/rainbowkit/tree/main/packages/create-rainbowkit).
+This is a dog collection items page. You can create, edit and delete dogs.
 
-## Getting Started
+Techstack:
+- Frontend: next.js + wagmi + rainbow kit
+- Backend: node.js + postgressql
 
-First, run the development server:
+Running Locally:
+- Clone the repository
+- To run the frontend: yarn dev
+- To run the backend: node server.js
+- You will need a postgres container in docker : docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
-```bash
-npm run dev
-```
+Running with Docker:
+The project has a docker compose file that can be run from the root directory in a docker environment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run: docker compose up
+In docker three containers will pop up: frontend, backend and database.
+Open Localhost:3000 in your browser to see the landing page.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about this stack, take a look at the following resources:
-
-- [RainbowKit Documentation](https://rainbowkit.com) - Learn how to customize your wallet connection flow.
-- [wagmi Documentation](https://wagmi.sh) - Learn how to interact with Ethereum.
-- [Next.js Documentation](https://nextjs.org/docs) - Learn how to build a Next.js application.
-
-You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-me/rainbowkit) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Stuff that I would love to add:
+- Being able to mint into your wallet any dog of the collection.
+- Make a game where there are fake dog breeds that you can delete when you find, and receive tokens for it. 
