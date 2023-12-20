@@ -20,3 +20,6 @@ Open Localhost:3000 in your browser to see the landing page.
 Stuff that I would love to add:
 - Being able to mint into your wallet any dog of the collection.
 - Make a game where there are fake dog breeds that you can delete when you find, and receive tokens for it. 
+
+Stuff that needs to be better:
+- Control form inputs better for different image extensions and qualities.
