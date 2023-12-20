@@ -86,7 +86,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
               <Form.Label>Breed</Form.Label>
               <Form.Control
                 type="breed"
-                htmlSize={15}
+                maxLength={15}
                 placeholder="Enter breed"
                 value={dog?.breed}
                 onChange={(e) => type==='Create' ? setDog({ ...dog, breed: e.target.value, id:`unique-${uuidv4()}`}): setDog({ ...dog, breed: e.target.value}) }
@@ -113,7 +113,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
               <Form.Label>Description</Form.Label>
               <Form.Control
                 as="textarea"
-                htmlSize={90}
+                maxLength={90}
                 rows={3}
                 placeholder="Enter description"
                 value={dog?.description}
