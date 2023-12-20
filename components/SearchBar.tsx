@@ -7,7 +7,7 @@ type searchWord = {
 
 const SearchBar = ({word}: searchWord) => {
 
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState<string>();
 
 
   return (
