@@ -37,3 +37,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 server/node_modules
+yarn.lock
