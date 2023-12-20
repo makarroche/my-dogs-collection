@@ -1,8 +1,6 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { NextPage } from "next";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
