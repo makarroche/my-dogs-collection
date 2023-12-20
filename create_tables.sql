@@ -31,3 +31,6 @@ VALUES ('7', 'Corgi','Corgi comes from words cor and ci, meaning "dwarf" and "do
 
 INSERT INTO dogs (id, breed, description, image) 
 VALUES ('8', 'German Shepherd','The Shepherd, is a German breed of working dog of medium to large size. ','/8.png');
+
+INSERT INTO dogs (id, breed, description, image) 
+VALUES ('9', 'Poodle','The breed is divided into four varieties based on size, the Standard Poodle, Medium Poodle, Miniature Poodle and Toy Poodle.','/9.png');

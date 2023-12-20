@@ -18,7 +18,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
   const [edit, setEdit] = useState(false);
 
   useEffect(() => {
-    if(dog && type==='Create') postDogs(dog)
+    if(dog && type==='Create' && dog?.image!= '') postDogs(dog)
   }, [dog?.image]);
 
   useEffect(() => {
@@ -86,6 +86,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
               <Form.Label>Breed</Form.Label>
               <Form.Control
                 type="breed"
+                htmlSize={15}
                 placeholder="Enter breed"
                 value={dog?.breed}
                 onChange={(e) => type==='Create' ? setDog({ ...dog, breed: e.target.value, id:`unique-${uuidv4()}`}): setDog({ ...dog, breed: e.target.value}) }
@@ -102,6 +103,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
                 name="file"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setImageDogFile(e.target.files?.[0])}
                 required = {type==='Create' ? true : false}
+                accept="png."
               />
               <Form.Control.Feedback type="invalid">
                 Please provide an image.
@@ -111,6 +113,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
               <Form.Label>Description</Form.Label>
               <Form.Control
                 as="textarea"
+                htmlSize={90}
                 rows={3}
                 placeholder="Enter description"
                 value={dog?.description}
