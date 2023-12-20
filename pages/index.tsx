@@ -5,7 +5,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Image from "next/image";
-import SearchBar from "../components/SearchBar";
 import { Dispatch, MutableRefObject, SetStateAction, useEffect, useRef, useState } from "react";
 import DogDeveloper from "../components/DogDeveloper";
 import DogDisplay from "../components/DogDisplay";
@@ -72,9 +71,6 @@ const Home: NextPage = () => {
         </Col>
       </Row>
       <Row className="mt-5 ms-4">
-        <Col xs={6}>
-          <SearchBar word={searchWord as string}></SearchBar>
-        </Col>
       </Row>
       <Row className="bg-dark me-5 ms-5 rounded">
         <DogDisplay
