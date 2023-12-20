@@ -2,7 +2,7 @@ import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
 import dogDetails from "../types/types";
 import { useEffect, useState } from "react";
 import { postDogsImageToServer, postDogsToDB, updateDogsFromDB } from "../api/methods";
-import {v4 as uuidv4, validate} from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 
 type DogDeveloperProps = {
   type: string;
@@ -11,7 +11,7 @@ type DogDeveloperProps = {
 };
 
 const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
-  const [dog, setDog] = useState<dogDetails>(dogToEdit ? dogToEdit : "");
+  const [dog, setDog] = useState<dogDetails>(dogToEdit ? dogToEdit : {breed: '', description:'', image: ''});
   const [validated, setValidated] = useState(false);
   const [imageDogFile, setImageDogFile] = useState<File>(); 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -45,7 +45,7 @@ const DogDeveloper = ({type, updateDisplay, dogToEdit}: DogDeveloperProps) => {
   const sendImageToServer = async () => {
     const data = new FormData()
     data.set('file', imageDogFile as File);
-    const dogsImageToServer = await postDogsImageToServer("image", data);
+    const dogsImageToServer: any= await postDogsImageToServer("image", data);
     setDog({...dog, image : dogsImageToServer.data as string})
   }
 

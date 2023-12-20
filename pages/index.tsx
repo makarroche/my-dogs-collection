@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Image from "next/image";
 import SearchBar from "../components/SearchBar";
-import { useEffect, useRef, useState } from "react";
+import { Dispatch, MutableRefObject, SetStateAction, useEffect, useRef, useState } from "react";
 import DogDeveloper from "../components/DogDeveloper";
 import DogDisplay from "../components/DogDisplay";
 import dogDetails from "../types/types";
@@ -17,8 +17,9 @@ const Home: NextPage = () => {
   const [createClicked, setCreateClicked] = useState(false);
   const [editClicked, setEditClicked] = useState(false);
   const [update, setUpdate] = useState(false);
-  const [dogToEdit, setDogToEdit] = useState<dogDetails>();
-  const myRef = useRef(null);
+  const [dogToEdit, setDogToEdit] = useState<dogDetails>({breed: '', description:'', image: ''});
+  const [searchWord, setSearchWord] = useState<string>('');
+  const myRef = useRef() as MutableRefObject<HTMLDivElement>;
 
   useEffect(() => {
     if (editClicked) {
@@ -74,7 +75,7 @@ const Home: NextPage = () => {
       </Row>
       <Row className="mt-5 ms-4">
         <Col xs={6}>
-          <SearchBar></SearchBar>
+          <SearchBar word={searchWord as string}></SearchBar>
         </Col>
       </Row>
       <Row className="bg-dark me-5 ms-5 rounded">

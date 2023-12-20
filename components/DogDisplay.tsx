@@ -82,7 +82,7 @@ const DogDisplay = ({updateDisplay, setShowEditMode, setDogToEdit}: DogDisplayPr
     <Container className="justify-content-center">
       {deleteModalClicked && (
         <Row>
-          <DeleteDogModal showModal={deleteModalClicked} setDeleteModalClicked={setDeleteModalClicked} dogToDelete={keyClicked} update={setUpdate}></DeleteDogModal>
+          <DeleteDogModal showModal={deleteModalClicked} setDeleteModalClicked={setDeleteModalClicked} dogToDelete={keyClicked as dogDetails} update={setUpdate}></DeleteDogModal>
         </Row>
       )}
       <Row className="justify-content-center">
@@ -92,7 +92,7 @@ const DogDisplay = ({updateDisplay, setShowEditMode, setDogToEdit}: DogDisplayPr
           )}
         ;
         {dogs?.length==0 && <><h1 className="text-white text-center">Oops, something went wrong!</h1>
-        <h2 className="text-white text-center mt-2"> We can't find dogs to display, try refreshing</h2></>}
+        <h2 className="text-white text-center mt-2"> We cant find dogs to display, try refreshing</h2></>}
       </Row>
     </Container>
   );
