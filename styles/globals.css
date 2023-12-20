@@ -1,5 +1,7 @@
 html,
 body {
+  background: rgb(103,60,139);
+  background: radial-gradient(circle, rgba(103,60,139,1) 0%, rgba(4,38,78,1) 100%);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -11,6 +13,65 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color:#8870B9;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.container-color {
+  background: rgb(103,60,139);
+background: radial-gradient(circle, rgba(103,60,139,1) 0%, rgba(4,38,78,1) 100%);
+}
+
+#more-features {
+  color:deeppink !important
+}
+
+.fun-footer {
+  background-color: #8a8adc;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  color:white;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pill-badge {
+  margin-left: 30%;
+}
+
+.margin-title {
+  margin-top: 10% !important;
+}
+
+.card-bg {
+  background-color: #3a3a3a;
+}
+
+#toast {
+  width: 100px;
+  margin-left: 180px;
+}
+
+#toast-color {
+  background: rgba(138,138,220,0.5);
+}
+
+#dev-button{
+  background-color: #7b3fe4; 
+  border-color: #7b3fe4;
+}
+
+#dog-developer-box{
+  margin-top: 10rem;
+}
+
+#divider {
+  margin-top: 15rem;
 }
