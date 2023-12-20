@@ -1,8 +1,11 @@
 This is a dog collection items page. You can create, edit and delete dogs.
+You can create by clicking on the NavBar and edit or delete by clicking in the card's three dots.
 
 Techstack:
 - Frontend: next.js + wagmi + rainbow kit
 - Backend: node.js + postgressql
+
+The frontend is made in next.js and talks to the backend server through a REST API. When a dog is created, the frontend stores the filename of the image of the dog in the database, to be able to recover the image which is stored in the filesystem. 
 
 Running Locally:
 - Clone the repository
@@ -18,8 +21,8 @@ In docker three containers will pop up: frontend, backend and database.
 Open Localhost:3000 in your browser to see the landing page.
 
 Stuff that I would love to add:
-- Being able to mint into your wallet any dog of the collection.
-- Make a game where there are fake dog breeds that you can delete when you find, and receive tokens for it. 
+- Being able to mint an NFT into your wallet of any dog of the collection.
+- Make a game where there are fake dog breeds that you can delete when you find one, and receive tokens for it. 
 
 Stuff that needs to be better:
-- Control form inputs better for different image extensions and qualities.
+- Control form input better for different image extensions and qualities.
