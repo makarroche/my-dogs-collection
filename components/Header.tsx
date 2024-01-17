@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRef } from "react";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 type HeaderProps = {
