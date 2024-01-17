@@ -1,4 +1,4 @@
-import { Button, Card, CardGroup, Col, Container, Row } from "react-bootstrap";
+import {Card, Col, Container, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ToastOptions from "./ToastOptions";
