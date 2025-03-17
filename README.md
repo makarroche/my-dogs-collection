@@ -25,4 +25,4 @@ Stuff that I would love to add:
 - Make a game where there are fake dog breeds that you can delete when you find one, and receive tokens for it. 
 
 Stuff that needs to be better:
-- Control form input better for different image extensions and qualities.
+- Control form input should be better for different image extensions and qualities.
