@@ -24,7 +24,7 @@ Stuff that I would love to add:
 - Being able to mint an NFT into your wallet of any dog of the collection.
 - Make a game where there are fake dog breeds that you can delete when you find one, and receive tokens for it. 
 
-Stuff that needs to be better:
+More stuff that needs to be better:
 - Control form input should be better for different image extensions and qualities.
 
 
