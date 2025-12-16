@@ -28,9 +28,3 @@ Stuff that needs to be better:
 - Control form input should be better for different image extensions and qualities.
 
 
-
-
-
-
-
-
