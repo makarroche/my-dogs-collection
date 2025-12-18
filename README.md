@@ -27,5 +27,6 @@ Stuff that I would love to add:
 Stuff that needs to be better:
 - Control form input should be better for different image extensions and qualities.
 - Add unit tests for both frontend and backend.
+- Improve error handling and user feedback messages.
 
 
