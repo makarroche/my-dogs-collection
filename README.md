@@ -30,5 +30,6 @@ Stuff that needs to be better:
 - Improve error handling and user feedback messages.
 - Implement proper validation for all API endpoints.
 - Add logging for debugging purposes.
+- Optimize database queries for better performance.
 
 
