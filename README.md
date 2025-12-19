@@ -29,5 +29,6 @@ Stuff that needs to be better:
 - Add unit tests for both frontend and backend.
 - Improve error handling and user feedback messages.
 - Implement proper validation for all API endpoints.
+- Add logging for debugging purposes.
 
 
