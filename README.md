@@ -32,3 +32,13 @@ Stuff that needs to be better:
 - Add logging for debugging purposes.
 - Optimize database queries for better performance.
 - Add pagination for better performance with large collections.
+
+
+
+
+
+
+
+
+
+
